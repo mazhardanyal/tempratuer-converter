@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature Conversion</title>
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="Temrature.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Temperature Converter</h1>
+        <div class="container">
+            <label for="celsius">Celsius</label>
+            <input type="number" id="celsius" oninput="convertTemperature('celsius')">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit" oninput="convertTemperature('fahrenheit')">
+        </div>
+        <div class="container">
+            <label for="kelvin">Kelvin</label>
+            <input type="number" id="kelvin" oninput="convertTemperature('kelvin')">
+        </div>
+        <div class="container">
+            <label for="rankine">Rankine</label>
+            <input type="number" id="rankine" oninput="convertTemperature('rankine')">
+        </div>
+    </div>
+    <script src="Converter.js"></script>
+</body>
+</html>

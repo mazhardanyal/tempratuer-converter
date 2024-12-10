@@ -1,0 +1,116 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --primary-bg: linear-gradient(135deg, #6a11cb, #2575fc); /* Background gradient */
+    --container-bg: #ffffff; /* Container background */
+    --text-color: #202020; /* General text color */
+    --label-color: #333333; /* Label text color */
+    --border-color: #d3d3d3; /* Input border */
+    --focus-color: #6a11cb; /* Input focus color */
+    --font-family: 'Roboto Mono', monospace; /* Font family */
+    --box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Box shadow effect */
+}
+
+/* Body */
+body {
+    background: var(--primary-bg);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* Wrapper */
+.wrapper {
+    background: var(--container-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+/* Title */
+.wrapper h1 {
+    font-size: 24px;
+    color: var(--focus-color);
+    margin-bottom: 20px;
+}
+
+/* Input Containers */
+.container {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--label-color);
+}
+
+.container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Input Focus Effects */
+.container input:focus {
+    border-color: var(--focus-color);
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.4); /* Soft glow */
+}
+
+/* Hover Effects */
+.container input:hover {
+    border-color: var(--focus-color);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 20px;
+    }
+
+    .container label {
+        font-size: 14px;
+    }
+
+    .container input {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
