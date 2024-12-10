@@ -1,15 +1,10 @@
-cat > README.md <<EOL
 # 🌡️ Temperature Converter in JavaScript  
 
 A simple **Temperature Converter** web application built with **HTML, CSS, and JavaScript**. This project allows users to convert temperatures between **Celsius, Fahrenheit, and Kelvin** effortlessly.
 
----
-
 ## 📖 About the Project  
 
 This **Temperature Converter** enables users to convert a given temperature from one scale to another. It's designed to be beginner-friendly and fully responsive, allowing users to quickly perform conversions with a clean, intuitive interface.
-
----
 
 ## 💻 Features  
 
@@ -31,7 +26,7 @@ This **Temperature Converter** enables users to convert a given temperature from
 
 ## 🚀 Demo  
 
-You can view the live demo [here](https://your-link.github.io)
+You can view the live demo [here](https://www.linkedin.com/posts/mazhardanyal_viral-coding-webdevelopment-activity-7272112093053476865-iVF9?utm_source=share&utm_medium=member_desktop)
 
 ---
 
@@ -40,13 +35,12 @@ You can view the live demo [here](https://your-link.github.io)
 To run the project locally on your computer:
 
 1. Clone this repository:  
-   \`\`\`bash
+   ```bash
    git clone https://github.com/mazhardanyal/tempratuer-converter.git
-   \`\`\`
 2. Navigate to the directory:  
-   \`\`\`bash
+   ```bash
    cd temperature-converter
-   \`\`\`
+   ```
 3. Open the \`index.html\` file in your favorite browser.  
 
 ---
